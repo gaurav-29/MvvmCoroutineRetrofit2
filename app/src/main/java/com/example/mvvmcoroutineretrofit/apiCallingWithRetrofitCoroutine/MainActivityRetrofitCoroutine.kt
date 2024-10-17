@@ -27,6 +27,7 @@ class MainActivityRetrofitCoroutine : AppCompatActivity(), GenericOnClickInterfa
         binding = ActivityMainRetrofitCoroutineBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Sample Text
         initViews()
         initSearchView()
     }
