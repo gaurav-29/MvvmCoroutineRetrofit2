@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivTopSearched"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img_youtuber2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/RoundedCorner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ankit Patel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/ivTopSearched"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Entertainment"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/ivTopSearched"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/tvSubscribers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="40K Subscribers"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/ivTopSearched"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvType"
+        android:layout_marginHorizontal="16dp" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3.5"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:progressTint="@color/yellow"
+        app:layout_constraintStart_toEndOf="@id/ivTopSearched"
+        app:layout_constraintTop_toBottomOf="@id/tvSubscribers"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="5dp"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Small"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,18 +15,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MvvmCoroutineRetrofit"
         tools:targetApi="31">
+
+        <activity
+            android:name=".multiviewRV_FanCall_Practical.FancallActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
         <activity
             android:name=".apiCallingWithRetrofitCoroutine.MainActivityRetrofitCoroutine"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true">
+<!--             <intent-filter>-->
+<!--                 <action android:name="android.intent.action.MAIN" />-->
+<!--                 <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
         </activity>
         <activity
             android:name=".roomDatabasePractice.CollegeListActivity"
             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
         <activity
             android:name=".roomDatabasePractice.AddCollegeActivity"
@@ -34,13 +47,10 @@
         <activity
             android:name=".apiCallingWithMvvmCoroutineRetrofit.MainActivity"
             android:exported="true">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+<!--             <intent-filter>-->
+<!--                 <action android:name="android.intent.action.MAIN" />-->
+<!--                 <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
         </activity>
     </application>
 
